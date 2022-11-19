@@ -1,18 +1,21 @@
-import './Card.css';
-import Button from '../Button/Button';
+import "./Card.css";
+import Button from "../Button/Button";
+import { useEffect } from "react";
 
-function Card(props) {
-    return (
-        <div className="Card">
-            <img className="Card-img" src={ props.img }/>
-            <div className="Card-container">
-            <h2 className="Card-title common-header">{ props.title }</h2>
-            <p className="Card-description">{ props.description }</p>
-            <div className="Card-price common-price">{ props.price }</div>
-            <Button>Купить</Button>
-            </div>
-        </div> 
-    )
+function Card({ img, title, description, price, onClick = () => {} }) {
+  return (
+    <div className="Card" onClick={() => onClick(title)}>
+      <img className="Card-img" src={img} />
+      <div className="Card-container">
+        <h2 className="Card-title common-header">{title}</h2>
+        <p className="Card-description">{description}</p>
+        <div className="Card-price common-price">{price}</div>
+        <div className="Card-button">
+          <Button>Купить</Button>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Card;

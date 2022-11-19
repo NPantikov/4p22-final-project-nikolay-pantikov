@@ -1,14 +1,21 @@
-import PropTypes from 'prop-types';
-import './Button.css';
+import PropTypes from "prop-types";
+import "./Button.css";
 
-function Button({ children }) {
-    return (
-        <button className="CommonButton">{ children }</button>
-    )
+function Button({ onClick = () => {}, children }) {
+  const onInnerClick = (event) => {
+    console.log("button clicked!", event);
+    onClick(event);
+  };
+
+  return (
+    <button onClick={onInnerClick} className="CommonButton">
+      {children}
+    </button>
+  );
 }
 
 Button.propTypes = {
-    text: PropTypes.string
-}
+  text: PropTypes.string,
+};
 
 export default Button;
