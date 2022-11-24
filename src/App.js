@@ -1,51 +1,22 @@
-import "./App.css";
-import Card from "./components/Card/Card";
-import Button from "./components/Button/Button";
-import Input from "./components/Input/Input";
-import { useEffect, useState } from "react";
-import Counter from "./components/Counter/Counter";
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import IndexPage from './pages/Index/Index';
+import ContactsPage from './pages/Contacts/Contacts';
+import DefaultLayout from './layouts/DefaultLayout';
+import ProductPage from './pages/Product/Product';
 
 function App() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    console.log("useEffect");
-    fetch("https://fakestoreapi.com/products")
-      .then((response) => response.json())
-      .then((result) => {
-        setProducts(result);
-      });
-  }, []);
-
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-      <Counter />
-      <div className="App-container">
-        {products.map((item, index) => {
-          return (
-            <Card
-              key={index}
-              title={item.title}
-              description={item.description}
-              onClick={(event) => console.log("click on", event)}
-              img={item.image}
-              price={item.price}
-            />
-          );
-        })}
-      </div>
-      <div className="App-newsletter">
-        <h2>Подписаться на новости компании</h2>
-        <Input
-          type="email"
-          placeholder="Введите email"
-          name="email"
-          id="email"
-        />
-        <Button>Подписаться</Button>
-      </div>
-    </div>
+      <Routes>
+        <Route path={'/'} element={<DefaultLayout/>}>
+          <Route index element={<IndexPage/>} />
+          <Route path={'contacts'} element={<ContactsPage/>} />
+          <Route path={'products'}>
+            <Route path={':userId'} element={<ProductPage/>} />
+          </Route>
+        </Route>  
+
+      </Routes>
   );
 }
 
