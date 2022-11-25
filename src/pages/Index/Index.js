@@ -2,9 +2,13 @@ import "./Index.css";
 import Card from "../../components/Card/Card";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Button from "../../components/Button/Button";
+import { useDispatch } from "react-redux";
+import { decrement } from "../../store/counter/counterSlice";
 
 function IndexPage() {
   const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     console.log("useEffect");
@@ -17,6 +21,7 @@ function IndexPage() {
 
   return (
     <>
+    <Button onClick={() => dispatch(decrement())}>Убавить</Button>
       <div className="Index-container">
         {products.map((item, index) => {
           return (
