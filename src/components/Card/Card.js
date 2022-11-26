@@ -13,15 +13,15 @@ function Card({ img, title, description, price, id }) {
     event.stopPropagation();
 
     dispatch(addToBasket(id));
-  }
+  };
 
   const onDeleteClick = (event) => {
     event.preventDefault();
     event.stopPropagation();
 
     dispatch(removeFromBasket(id));
-  }
-  
+  };
+
   return (
     <Link to={`products/${id}`} className="Card">
       <img className="Card-img" src={img} />
@@ -30,8 +30,14 @@ function Card({ img, title, description, price, id }) {
         <p className="Card-description">{description}</p>
         <div className="Card-price common-price">{price}</div>
         <div className="Card-button">
-          { !products[id] && <Button onClick={onBuyClick}>Купить</Button> }
-          { products[id] &&<Button onClick={onDeleteClick}>Удалить</Button> }
+          {!products[id] && <Button onClick={onBuyClick}>Купить</Button>}
+          {products[id] && (
+            <>
+              <Button onClick={onDeleteClick}>-</Button>
+              {products[id]}
+              <Button onClick={onBuyClick}>+</Button>
+            </>
+          )}
         </div>
       </div>
     </Link>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import { useDispatch } from "react-redux";
 import { decrement } from "../../store/counter/counterSlice";
+import { clearBasket } from "../../store/basket/basketSlice";
 
 function IndexPage() {
   const [products, setProducts] = useState([]);
@@ -21,7 +22,7 @@ function IndexPage() {
 
   return (
     <>
-    <Button onClick={() => dispatch(decrement())}>Убавить</Button>
+      <Button onClick={() => dispatch(clearBasket())}>Очистить корзину</Button>
       <div className="Index-container">
         {products.map((item, index) => {
           return (

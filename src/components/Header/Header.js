@@ -7,7 +7,13 @@ function Header() {
   return (
     <header className="Header">
       <h1>Header</h1>
-      <div className="Header-basketCounter">{ Object.keys(basket).length }</div>
+      <div className="Header-basketCounter">
+        {Object.values(basket).reduce((acc, item) => {
+          acc += item;
+
+          return acc;
+        }, 0)}
+      </div>
     </header>
   );
 }

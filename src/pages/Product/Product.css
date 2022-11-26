@@ -1,0 +1,21 @@
+.Product {
+    width: 768px;
+    box-shadow: 1px 1px 10px 4px #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+.Product-button {
+    margin: 20px;
+}
+
+.Product-img {
+    width: 300px;
+}
+
+.Product-description {
+    margin-right: 150px;
+    margin-left: 150px;
+}

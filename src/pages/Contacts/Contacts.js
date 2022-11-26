@@ -8,16 +8,16 @@ function ContactsPage() {
 
   const onClick = () => {
     dispatch(increment());
-  }
+  };
 
   return (
     <>
       <h1>Contacts</h1>
       <h1>{count}</h1>
-      <Button onClick={onClick}>Приюавить</Button>
-      <Button onClick={() => dispatch(incrementByAmount(10))}>Приюавить 10</Button>
+      <Button onClick={onClick}>Убрать</Button>
+      <Button onClick={() => dispatch(incrementByAmount(1))}>Прибавить</Button>
     </>
-  )
+  );
 }
 
 export default ContactsPage;
