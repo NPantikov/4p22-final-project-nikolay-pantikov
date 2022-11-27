@@ -27,7 +27,7 @@ function Card({ img, title, description, price, id }) {
       <img className="Card-img" src={img} />
       <div className="Card-container">
         <h2 className="Card-title common-header">{title}</h2>
-        <p className="Card-description">{description}</p>
+        {/* <p className="Card-description">{description}</p> */}
         <div className="Card-price common-price">{price}</div>
         <div className="Card-button">
           {!products[id] && <Button onClick={onBuyClick}>Купить</Button>}

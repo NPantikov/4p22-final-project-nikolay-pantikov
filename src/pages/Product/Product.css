@@ -4,7 +4,8 @@
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
-    margin: 20px auto;
+    margin: 100px auto 20px;
+    color: #474A51;
   }
 
 .Product-button {

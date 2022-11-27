@@ -1,0 +1,16 @@
+.Footer {
+    background: #E5E5E5;
+    height: 500px;
+    margin-bottom: 0;
+    color: #474A51;
+    display: flex;
+    padding: 20px 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Footer-link {
+    text-decoration: none;
+    color: #474A51;
+}
+

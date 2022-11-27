@@ -37,7 +37,7 @@ function IndexPage() {
             />
           );
         })}
-        <Link to={"contacts"}>Контакты</Link>
+        {/* <Link to={"contacts"}>Контакты</Link> */}
       </div>
     </>
   );
