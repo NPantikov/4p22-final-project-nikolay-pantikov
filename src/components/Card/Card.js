@@ -30,7 +30,7 @@ function Card({ img, title, description, price, id }) {
         {/* <p className="Card-description">{description}</p> */}
         <div className="Card-price common-price">{price}</div>
         <div className="Card-button">
-          {!products[id] && <Button onClick={onBuyClick}>Купить</Button>}
+          {!products[id] && <Button onClick={onBuyClick}>Вuy</Button>}
           {products[id] && (
             <>
               <Button onClick={onDeleteClick}>-</Button>

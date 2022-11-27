@@ -21,8 +21,8 @@ function IndexPage() {
   }, []);
 
   return (
-    <>
-      <Button onClick={() => dispatch(clearBasket())}>Очистить корзину</Button>
+    <div className="Index-button">
+      <Button onClick={() => dispatch(clearBasket())}>Clear cart</Button>
       <div className="Index-container">
         {products.map((item, index) => {
           return (
@@ -39,7 +39,7 @@ function IndexPage() {
         })}
         {/* <Link to={"contacts"}>Контакты</Link> */}
       </div>
-    </>
+    </div>
   );
 }
 

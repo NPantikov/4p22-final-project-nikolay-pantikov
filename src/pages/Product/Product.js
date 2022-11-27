@@ -42,10 +42,10 @@ function ProductPage({ id }) {
       <div className="Product">
         <h1 className="Product-title">{product.title}</h1>
         <img className="Product-img" src={product.image}></img>
-        <p className="Product-description">{product.description}</p>
+        <h3 className="Product-description">{product.description}</h3>
         <h2 className="Product-price">{product.price}$</h2>
         <div className="Product-button">
-          {!products[id] && <Button onClick={onBuyClick}>Купить</Button>}
+          {!products[id] && <Button onClick={onBuyClick}>Вuy</Button>}
           {products[id] && (
             <>
               <Button onClick={onDeleteClick}>-</Button>

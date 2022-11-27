@@ -25,9 +25,12 @@
   font-size: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 130%;;  
+  line-height: 130%;  
 }
 
 .Card-button {
   margin-top: auto;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 130%; 
 }

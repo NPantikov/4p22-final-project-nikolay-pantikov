@@ -6,10 +6,18 @@
     text-align: center;
     margin: 100px auto 20px;
     color: #474A51;
-  }
+}
+
+.Product-title {
+    padding-right: 50px;
+    padding-left: 50px;
+}
 
 .Product-button {
-    margin: 20px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
 }
 
 .Product-img {
@@ -17,6 +25,7 @@
 }
 
 .Product-description {
-    margin-right: 150px;
-    margin-left: 150px;
+    padding-right: 150px;
+    padding-left: 150px;
+    text-align: justify;
 }

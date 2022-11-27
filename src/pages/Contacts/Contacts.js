@@ -14,8 +14,8 @@ function ContactsPage() {
     <>
       <h1>Contacts</h1>
       <h1>{count}</h1>
-      <Button onClick={onClick}>Убрать</Button>
-      <Button onClick={() => dispatch(incrementByAmount(1))}>Прибавить</Button>
+      <Button onClick={onClick}>Remove</Button>
+      <Button onClick={() => dispatch(incrementByAmount(1))}>Add</Button>
     </>
   );
 }

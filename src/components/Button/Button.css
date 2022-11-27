@@ -7,6 +7,12 @@
   border-radius: 5px;
   transition: 0.2s background-color;
   cursor: pointer;
+
+  height: 48px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
   /* margin-top: 90px; */
 }
 
