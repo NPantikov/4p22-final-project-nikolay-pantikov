@@ -3,7 +3,7 @@
   height: 80px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
   padding-left: 40px;
   flex-wrap: wrap;
   position: fixed;
@@ -18,9 +18,16 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 30px;
-  line-height: 20px;
   letter-spacing: 0.03em;
   font-style: normal;
   color: #0e58c9;
+}
+
+.Header-logo:hover {
+  color: #0058ff;
+}
+
+.Header-cart {
+  width: 50px;
 }
 

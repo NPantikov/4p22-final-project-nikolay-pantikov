@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="Footer">
       <span>Footer</span>
-      <Link className="Footer-link" to={"contacts"}>Contacts</Link>
+      <Link className="Contacts-link" to={"contacts"}>Contacts</Link>
     </footer>
   );
 }

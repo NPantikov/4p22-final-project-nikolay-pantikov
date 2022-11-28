@@ -1,0 +1,13 @@
+.Basketpage-container {
+    display: flex;
+    padding: 80px 40px;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+  
+.Basketpage-button {
+  padding-top: 90px;
+  text-align: center;
+}
+  
+  
