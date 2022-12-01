@@ -5,14 +5,14 @@ import "./Product.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addToBasket, removeFromBasket } from "../../store/basket/basketSlice";
 
-function ProductPage({ id }) {
-  const { userId } = useParams();
+function ProductPage() {
+  const { productId } = useParams();
   const [product, setProduct] = useState({});
 
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `https://fakestoreapi.com/products/${userId}`
+        `https://fakestoreapi.com/products/${productId}`
       );
       const result = await response.json();
 
@@ -27,14 +27,14 @@ function ProductPage({ id }) {
     event.preventDefault();
     event.stopPropagation();
 
-    dispatch(addToBasket(id));
+    dispatch(addToBasket(productId));
   };
 
   const onDeleteClick = (event) => {
     event.preventDefault();
     event.stopPropagation();
 
-    dispatch(removeFromBasket(id));
+    dispatch(removeFromBasket(productId));
   };
 
   return (
@@ -45,11 +45,11 @@ function ProductPage({ id }) {
         <h3 className="Product-description">{product.description}</h3>
         <h2 className="Product-price">{product.price}$</h2>
         <div className="Product-button">
-          {!products[id] && <Button onClick={onBuyClick}>Вuy</Button>}
-          {products[id] && (
+          {!products[productId] && <Button onClick={onBuyClick}>Вuy</Button>}
+          {products[productId] && (
             <>
               <Button onClick={onDeleteClick}>-</Button>
-              {products[id]}
+              {products[productId]}
               <Button onClick={onBuyClick}>+</Button>
             </>
           )}

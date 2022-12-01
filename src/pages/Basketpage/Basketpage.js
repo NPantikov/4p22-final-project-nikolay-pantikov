@@ -19,6 +19,7 @@ function BasketPage() {
 
   return (
     <div className="Basketpage-container">
+      <h1 className="Basketpage-title">Cart of market</h1>
       <div className="Basketpage-card">
         {products
           .filter((product) => !!basket[product.id])
@@ -36,7 +37,7 @@ function BasketPage() {
             );
           })}
       </div>
-      <span className="Basketpage-title-totalPrice">Total price:</span>
+      <h1 className="Basketpage-title-totalPrice">Total price:</h1>
       <div className="Basketpage-totalPrice">
         {products.reduce((acc, product) => {
           if (basket[product.id]) {

@@ -37,7 +37,7 @@ function IndexPage() {
             );
           })}
         {isLoading && <h2>Loading...</h2>}
-        {/* <Link to={"contacts"}>Контакты</Link> */}
+        <Link to={"contacts"}>Контакты</Link>
       </div>
     </div>
   );

@@ -1,11 +1,15 @@
 .Basketpage-container {
   text-align: center;
-  margin: 140px auto 60px;
+}
+
+.Basketpage-title {
+  padding-top: 90px;
+  color: #474a51;
 }
 
 .Basketpage-card {
   display: flex;
-  padding: 80px 40px;
+  padding-left: 40px;
   gap: 32px;
   flex-wrap: wrap;
 }
@@ -16,9 +20,13 @@
 
 .Basketpage-totalPrice {
   color: #474a51;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 130%;
 }
 
 .Basketpage-button {
-  padding-top: 90px;
+  padding-top: 30px;
+  padding-bottom: 50px;  
   text-align: center;
 }
