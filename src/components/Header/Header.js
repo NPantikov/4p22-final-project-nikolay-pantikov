@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/cart.png";
+import cart from "../../assets/img/cart.png";
 
 function Header() {
   const basket = useSelector((state) => state.basket);
@@ -13,7 +13,7 @@ function Header() {
       </Link>
       <Link to={"basketpage"}><img
           className="Header-cart"
-          src={logo}
+          src={cart}
           alt="Cart"
       />
       </Link>

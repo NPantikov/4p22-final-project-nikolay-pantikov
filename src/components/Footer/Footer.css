@@ -1,19 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .Footer {
-  background: #e5e5e5;
+  background: #f8f8f8;
   height: 500px;
   margin-bottom: 0;
   color: #474a51;
   display: flex;
   padding: 20px 40px;
-  gap: 20px;
+  gap: 105px;
   flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.Contacts-link {
+.Footer-contacts-link {
   text-decoration: none;
   color: #474a51;
 }
 
-.Contacts-link:hover {
+.Footer-contacts-link:hover {
   color: #0058ff;
+}
+
+.Footer-market {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Footer-press {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Footer-newsletter {
+  width: 583px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Footer-market-news {
+  color: #0e58c9;
+}
+
+.Footer-subscribe-button {
+  height: 56px;
+  width: 223px;
+}
+
+.Footer-sociallinks {
+  display: flex;
+  gap: 40px;
+}
+
+img {
+  width: 30px;
+}
+
+.Footer-conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }

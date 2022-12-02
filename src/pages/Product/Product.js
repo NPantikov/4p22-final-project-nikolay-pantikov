@@ -40,11 +40,11 @@ function ProductPage() {
   return (
     <>
       <div className="Product">
-        <h1 className="Product-title">{product.title}</h1>
-        <img className="Product-img" src={product.image}></img>
-        <h3 className="Product-description">{product.description}</h3>
-        <h2 className="Product-price">{product.price}$</h2>
-        <div className="Product-button">
+        <h1 className="Product__title">{product.title}</h1>
+        <img className="Product__img" src={product.image}></img>
+        <h3 className="Product__description">{product.description}</h3>
+        <h2 className="Product__price">{product.price}$</h2>
+        <div className="Product__button">
           {!products[productId] && <Button onClick={onBuyClick}>Вuy</Button>}
           {products[productId] && (
             <>

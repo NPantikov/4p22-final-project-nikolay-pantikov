@@ -16,10 +16,18 @@ code {
     monospace;
 }
 
-.common-header {
-  font-size: 20px;
-}
-
 .common-price::after {
   content: "$";
+}
+
+@media screen and (max-width: 768px) {
+  .common-header {
+    font-size: calc(20 / 768 * 100vw);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .common-header {
+    font-size: calc(20 / 1440 * 100vw);
+  }
 }

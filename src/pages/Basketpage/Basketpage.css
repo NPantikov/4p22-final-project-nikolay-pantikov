@@ -1,32 +1,80 @@
-.Basketpage-container {
-  text-align: center;
+@media screen and (max-width: 768px) {
+
+  .Basketpage-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: calc(20 / 768 * 100vw);
+    flex-direction: column;
+  }
+
+  .Basketpage-container__title {
+    padding-top: calc(100 / 768 * 100vw);
+    color: #474a51;
+  }
+
+  .Basketpage-card {
+    display: flex;
+    padding-left: calc(40 / 768 * 100vw);
+    gap: calc(32 / 768 * 100vw);
+    flex-wrap: wrap;
+  }
+
+  .Basketpage-container__title-totalPrice {
+    color: #474a51;
+  }
+
+  .Basketpage-container__totalPrice {
+    color: #474a51;
+    font-weight: 700;
+    font-size: calc(26 / 768 * 100vw);
+    line-height: 130%;
+  }
+
+  .Basketpage-container__button {
+    padding-bottom: calc(40 / 768 * 100vw);  
+    text-align: center;
+  }
+
 }
 
-.Basketpage-title {
-  padding-top: 90px;
-  color: #474a51;
+@media screen and (min-width: 769px) {
+
+  .Basketpage-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: calc(20 / 1440 * 100vw);
+    flex-direction: column;
+  }
+
+  .Basketpage-container__title {
+    padding-top: calc(100 / 1440 * 100vw);
+    color: #474a51;
+  }
+
+  .Basketpage-card {
+    display: flex;
+    padding-left: calc(40 / 1440 * 100vw);
+    gap: calc(32 / 1440 * 100vw);
+    flex-wrap: wrap;
+  }
+
+  .Basketpage-container__title-totalPrice {
+    color: #474a51;
+  }
+
+  .Basketpage-container__totalPrice {
+    color: #474a51;
+    font-weight: 700;
+    font-size: calc(26 / 1440 * 100vw);
+    line-height: 130%;
+  }
+
+  .Basketpage-container__button {
+    padding-bottom: calc(40 / 1440 * 100vw);  
+    text-align: center;
+  }
+
 }
 
-.Basketpage-card {
-  display: flex;
-  padding-left: 40px;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.Basketpage-title-totalPrice {
-  color: #474a51;
-}
-
-.Basketpage-totalPrice {
-  color: #474a51;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 130%;
-}
-
-.Basketpage-button {
-  padding-top: 30px;
-  padding-bottom: 50px;  
-  text-align: center;
-}
