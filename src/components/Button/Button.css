@@ -1,9 +1,8 @@
 @media screen and (max-width: 768px) {
-
   .CommonButton {
     outline: none;
     border: none;
-    background: #0e58c9; 
+    background: #0e58c9;
     padding: calc(8 / 768 * 100vw) calc(20 / 768 * 100vw);
     color: white;
     border-radius: calc(5 / 768 * 100vw);
@@ -19,15 +18,13 @@
   .CommonButton:hover {
     background: #0058ff;
   }
-
 }
 
 @media screen and (min-width: 769px) {
-
   .CommonButton {
     outline: none;
     border: none;
-    background: #0e58c9; 
+    background: #0e58c9;
     padding: calc(8 / 1440 * 100vw) calc(20 / 1440 * 100vw);
     color: white;
     border-radius: calc(5 / 1440 * 100vw);
@@ -43,5 +40,4 @@
   .CommonButton:hover {
     background: #0058ff;
   }
-
 }

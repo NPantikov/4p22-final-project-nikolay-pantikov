@@ -11,11 +11,8 @@ function Header() {
       <Link className="Header-logo" to={"/"}>
         market
       </Link>
-      <Link to={"basketpage"}><img
-          className="Header-cart"
-          src={cart}
-          alt="Cart"
-      />
+      <Link to={"basketpage"}>
+        <img className="Header-cart" src={cart} alt="Cart" />
       </Link>
       <div className="Header-basketCounter">
         {Object.values(basket).reduce((acc, item) => {

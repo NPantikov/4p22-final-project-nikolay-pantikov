@@ -1,0 +1,23 @@
+h1 {
+    color: #474a51;
+}
+
+@media screen and (max-width: 768px) {
+  .Contacts {
+    padding-top: calc(100 / 768 * 100vw);
+    padding-left: calc(40 / 768 * 100vw);
+    padding-bottom: calc(50 / 768 * 100vw);
+    display: flex;
+    gap: calc(20 / 768 * 100vw);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Contacts {
+    padding-top: calc(100 / 1440 * 100vw);
+    padding-left: calc(40 / 1440 * 100vw);
+    padding-bottom: calc(50 / 1440 * 100vw);
+    display: flex;
+    gap: calc(20 / 1440 * 100vw);
+  }
+}

@@ -1,37 +1,77 @@
-.Header {
-  background: #ffffff;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  /* gap: 20px; */
-  padding-left: 40px;
-  flex-wrap: wrap;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 0;
-  color: #474A51;
+@media screen and (max-width: 768px) {
+  .Header {
+    background: #ffffff;
+    height: calc(80 / 768 * 100vw);
+    display: flex;
+    align-items: center;
+    padding-left: calc(40 / 768 * 100vw);
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    color: #474a51;
+  }
+
+  .Header-logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: calc(30 / 768 * 100vw);
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: #0e58c9;
+  }
+
+  .Header-logo:hover {
+    color: #0058ff;
+  }
+
+  .Header-cart {
+    width: calc(50 / 768 * 100vw);
+  }
+
+  .Header-basketCounter {
+    color: #0e58c9;
+    font-weight: 700;
+  }
 }
 
-.Header-logo {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  color: #0e58c9;
-}
+@media screen and (min-width: 769px) {
+  .Header {
+    background: #ffffff;
+    height: calc(80 / 1440 * 100vw);
+    display: flex;
+    align-items: center;
+    padding-left: calc(40 / 1440 * 100vw);
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    color: #474a51;
+  }
 
-.Header-logo:hover {
-  color: #0058ff;
-}
+  .Header-logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: calc(30 / 1440 * 100vw);
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: #0e58c9;
+  }
 
-.Header-cart {
-  width: 50px;
-}
+  .Header-logo:hover {
+    color: #0058ff;
+  }
 
-.Header-basketCounter {
-  color:#0e58c9;
-  font-weight: 700;
+  .Header-cart {
+    width: calc(50 / 1440 * 100vw);
+  }
+
+  .Header-basketCounter {
+    color: #0e58c9;
+    font-weight: 700;
+  }
 }

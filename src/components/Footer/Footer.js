@@ -39,8 +39,15 @@ function Footer() {
           about Market delivered to you.
         </h2>
         <div className="Footer-subscribe">
-          {/* <Input type="email" placeholder="Enter emeil" name="email" id="email" /> */}
+          {/* <Input
+            className="Footer-subscribe-input"
+            type="email"
+            placeholder="Enter emeil"
+            name="email"
+            id="email"
+          /> */}
           <TextField
+            className="Footer-subscribe-input"
             type="email"
             name="email"
             id="email"

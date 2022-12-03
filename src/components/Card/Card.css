@@ -1,5 +1,4 @@
 @media screen and (max-width: 768px) {
-
   .Card {
     width: calc(432 / 768 * 100vw);
     box-shadow: 0px 0px calc(5 / 768 * 100vw) calc(2 / 768 * 100vw) #ccc;
@@ -7,41 +6,44 @@
     overflow: hidden;
     text-align: center;
     text-decoration: none;
-    color: #474A51;
+    color: #474a51;
   }
 
-  .Card_img {
+  .Card-img {
     width: calc(432 / 768 * 100vw);
     height: calc(250 / 768 * 100vw);
     object-fit: cover;
   }
 
-  .Card_container {
+  .Card-container {
     padding: calc(20 / 768 * 100vw);
-    height: calc(100% - calc(250 / 768 * 100vw)); 
+    height: calc(100% - calc(250 / 768 * 100vw));
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: calc(20 / 768 * 100vw);
   }
 
-  .Card_conteiner__price {
+  .Card-conteiner__price {
     font-size: normal;
     font-weight: 700;
     font-size: calc(26 / 768 * 100vw);
-    line-height: 130%;  
+    line-height: 130%;
   }
 
-  .Card_conteiner__button {
+  .Card-conteiner__button {
     font-weight: 700;
     font-size: calc(26 / 768 * 100vw);
-    line-height: 130%; 
+    height: calc(48 / 768 * 100vw);
+    display: flex;
+    flex-direction: row;
+    gap: calc(8 / 768 * 100vw);
+    justify-content: center;
+    align-items: center;
   }
-
-} 
+}
 
 @media screen and (min-width: 769px) {
-
   .Card {
     width: calc(432 / 1440 * 100vw);
     box-shadow: 0px 0px calc(5 / 1440 * 100vw) calc(2 / 1440 * 100vw) #ccc;
@@ -49,35 +51,39 @@
     overflow: hidden;
     text-align: center;
     text-decoration: none;
-    color: #474A51;
+    color: #474a51;
   }
 
-  .Card_img {
+  .Card-img {
     width: calc(432 / 1440 * 100vw);
     height: calc(250 / 1440 * 100vw);
     object-fit: cover;
   }
 
-  .Card_container {
+  .Card-container {
     padding: calc(20 / 1440 * 100vw);
-    height: calc(100% - calc(250 / 1440 * 100vw)); 
+    height: calc(100% - calc(250 / 1440 * 100vw));
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: calc(20 / 1440 * 100vw);
   }
 
-  .Card_conteiner__price {
+  .Card-conteiner__price {
     font-size: normal;
     font-weight: 700;
     font-size: calc(26 / 1440 * 100vw);
-    line-height: 130%;  
+    line-height: 130%;
   }
 
-  .Card_conteiner__button {
+  .Card-conteiner__button {
     font-weight: 700;
-    font-size: calc(26 / 768 * 100vw);
-    line-height: 130%; 
+    font-size: calc(26 / 1440 * 100vw);
+    height: calc(48 / 1440 * 100vw);
+    display: flex;
+    flex-direction: row;
+    gap: calc(8 / 1440 * 100vw);
+    justify-content: center;
+    align-items: center;
   }
-
-} 
+}

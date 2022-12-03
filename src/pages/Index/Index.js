@@ -1,10 +1,7 @@
 import "./Index.css";
 import Card from "../../components/Card/Card";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import Button from "../../components/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { clearBasket } from "../../store/basket/basketSlice";
 import { getProducts } from "../../store/products/productsSlice";
 
 function IndexPage() {
@@ -19,8 +16,9 @@ function IndexPage() {
   }, []);
 
   return (
-    <div className="Index-button">
-      <Button onClick={() => dispatch(clearBasket())}>Clear cart</Button>
+    <div className="Index-page">
+      <h1 className="Index-page-title">market</h1>
+      <h2 className="Index-page-subtitle">Epic holiday deals for everyone</h2>
       <div className="Index-container">
         {!isLoading &&
           products.map((item, index) => {
@@ -37,7 +35,6 @@ function IndexPage() {
             );
           })}
         {isLoading && <h2>Loading...</h2>}
-        <Link to={"contacts"}>Контакты</Link>
       </div>
     </div>
   );

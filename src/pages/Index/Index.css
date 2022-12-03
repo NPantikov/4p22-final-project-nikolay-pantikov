@@ -1,31 +1,53 @@
 @media screen and (max-width: 768px) {
+  .Index-page {
+    padding-top: calc(90 / 768 * 100vw);
+  }
+
+  .Index-page-title {
+    text-align: center;
+    padding-top: calc(20 / 768 * 100vw);
+    color: #474a51;
+  }
+
+  .Index-page-subtitle {
+    text-align: center;
+    padding-top: calc(20 / 768 * 100vw);
+    color: #0e58c9;
+  }
 
   .Index-container {
     display: flex;
-    padding: calc(80 / 768 * 100vw) calc(40 / 768 * 100vw);
+    justify-content: center;
+    padding: calc(20 / 768 * 100vw) calc(40 / 768 * 100vw);
     gap: calc(32 / 768 * 100vw);
     flex-wrap: wrap;
     color: #0e58c9;
   }
-
-  .Index-button {
-    padding-top: calc(90 / 768 * 100vw);
-  }
-
 }
 
 @media screen and (min-width: 769px) {
+  .Index-page {
+    padding-top: calc(90 / 1440 * 100vw);
+  }
+
+  .Index-page-title {
+    text-align: center;
+    padding-top: calc(20 / 1440 * 100vw);
+    color: #474a51;
+  }
+
+  .Index-page-subtitle {
+    text-align: center;
+    padding-top: calc(20 / 1440 * 100vw);
+    color: #0e58c9;
+  }
 
   .Index-container {
     display: flex;
-    padding: calc(80 / 1440 * 100vw) calc(40 / 1440 * 100vw);
+    justify-content: center;
+    padding: calc(20 / 1440 * 100vw) calc(40 / 1440 * 100vw);
     gap: calc(32 / 1440 * 100vw);
     flex-wrap: wrap;
     color: #0e58c9;
   }
-
-  .Index-button {
-    padding-top: calc(90 / 1440 * 100vw);
-  }
-
 }

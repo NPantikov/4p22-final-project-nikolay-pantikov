@@ -1,5 +1,4 @@
 @media screen and (max-width: 768px) {
-
   .Basketpage-container {
     text-align: center;
     display: flex;
@@ -32,14 +31,12 @@
   }
 
   .Basketpage-container__button {
-    padding-bottom: calc(40 / 768 * 100vw);  
+    padding-bottom: calc(40 / 768 * 100vw);
     text-align: center;
   }
-
 }
 
 @media screen and (min-width: 769px) {
-
   .Basketpage-container {
     text-align: center;
     display: flex;
@@ -72,9 +69,7 @@
   }
 
   .Basketpage-container__button {
-    padding-bottom: calc(40 / 1440 * 100vw);  
+    padding-bottom: calc(40 / 1440 * 100vw);
     text-align: center;
   }
-
 }
-
